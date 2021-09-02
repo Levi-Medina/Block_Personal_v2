@@ -1,0 +1,272 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	color: #fff;
+	font-family: 'open sans';
+}
+
+.contenedor{
+	padding: 60px 0;
+	width: 90%;
+	max-width: 1000px;
+	margin: auto;
+	overflow: hidden;
+}
+
+.titulo{
+	color: #642a73;
+	font-size: 30px;
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+/*Header*/
+header{
+	width: 100%;
+	height: 600px;
+	background: #00416A; 
+	/* fallback for old browsers */
+	background: -webkit-linear-gradient(to top, hsl(210, 4%, 90%, 0.4), hsl(203, 100%, 21%, 0.6)), url(../img/fondo.jpg);  
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to top, hsl(210, 4%, 90%, 0.4), hsl(203, 100%, 21%, 0.6)), url(../img/fondo.jpg);
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: cover;
+	background-attachment: fixed;
+	position: relative;
+}
+
+header .texto-header{
+	display: flex;
+	height: 430px;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.texto-header h1{
+	font-size: 50px;
+	color: #fff;
+}
+
+.ola{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+.contenedor-mas-informacion{
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.imagen-sobre-mi{
+	width: 20%;
+}
+
+.sobre-mi .contenido-texto{
+	width: 48%;
+	color: #000000;
+}
+
+.contenido-texto h3{
+	margin-bottom: 15px;
+}
+
+.contenido-texto h3 span{
+	background: #4d0686;
+	color: #fff;
+	border-radius: 50%;
+	display: inline-block;
+	text-align: center;
+	width: 25px;
+	height: 25px;
+	padding: 2px;
+	box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+	margin-right: 5px;
+}
+
+.contenido-texto h4{
+	margin-bottom: 15px;
+}
+
+.contenido-texto h4 span{
+	background: #4d0686;
+	color: #fff;
+	border-radius: 50%;
+	display: inline-block;
+	text-align: center;
+	width: 23px;
+	height: 23px;
+	padding: 3px;
+	box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+	margin-right: 5px;
+}
+
+.contenido-texto h5{
+	margin-bottom: 15px;
+}
+
+.contenido-texto h5 span{
+	background: #4d0686;
+	color: #fff;
+	border-radius: 50%;
+	display: inline-block;
+	text-align: center;
+	width: 21px;
+	height: 21px;
+	padding: 3px;
+	box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+	margin-right: 5px;
+}
+
+.contenido-texto h6{
+	margin-bottom: 15px;
+}
+
+.contenido-texto h6 span{
+	background: #4d0686;
+	color: #fff;
+	border-radius: 50%;
+	display: inline-block;
+	text-align: center;
+	width: 19px;
+	height: 19px;
+	padding: 4px;
+	box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+	margin-right: 5px;
+}
+
+.sobre-mi .contenido-personalidad{
+	width: 48%;
+	color: #000000;
+}
+
+/*galeria*/
+.portafolio{
+	background: #f2f2f2;
+}
+
+.galeria{
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+
+.imagen{
+	width: 100%;
+	margin-bottom: 100%;
+	overflow: hidden;
+	position: relative;
+	cursor: pointer;
+	box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+.imagen > img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+}
+
+.hover-galeria{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	transform: scale(0);
+	background: hsla(273, 91%, 27%, 0.7);
+	transition: transform .5s;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.hover-galeria img{
+	width: 150px;
+}
+
+.hover-galeria p{
+	color: #fff;
+}
+
+.imagen:hover .hover-galeria{
+	transform: scale(1);
+}
+
+/*informacion extra*/
+.cards{
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.cards .card{
+	background: #4d0686;
+	display: flex;
+	width: 40%;
+	height: 300px;
+	align-items: center;
+	justify-content: space-evenly;
+	border-radius: 5px;
+	box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+}
+
+.cards .card img{
+	width: 100px;
+	height: 100px;
+	object-fit: cover;
+	border: 3px solid#fff;
+	border-radius: 50%;
+	display: block;
+}
+
+.cards .card > .contenido-texto-card{
+	width: 60%;
+	color: #fff;
+}
+
+.cards .card > .contenido-texto-card p{
+	font-weight: 300;
+	padding-top: 5px;
+}
+
+/*footer*/
+footer{
+	background: #414141;
+	padding: 30px 0 30px 0;
+	margin: auto;
+	overflow: hidden;
+} 
+
+.contenedor-footer{
+	display: flex;
+	width: 90%;
+	justify-content: space-evenly;
+	margin: auto;
+	padding-bottom: 50px;
+	border-bottom: 1px solid #ccc;
+}
+
+.content-foot{
+	text-align: center;
+}
+
+.content-foot a{
+	color: #fff;
+	border-bottom: 1px solid #9e9797;
+	padding-bottom: 5px;
+	margin-bottom: 10px;
+}
+
+.titulo-final{
+	text-align: center;
+	font-size: 14px;
+	margin: 10px 0 0 0;
+	color: #9e9797;
+
+}
